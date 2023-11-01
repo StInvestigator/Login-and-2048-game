@@ -69,10 +69,10 @@
   Style="{StaticResource MaterialDesignPaperButton}"
   ToolTip="Resource name: MaterialDesignPaperButton" Height="39" Margin="80 0 0 0"/>
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Name="SPPasswordValidate" Orientation="Horizontal" Margin="150 30 0 0">
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Name="SPPasswordValidate" Orientation="Horizontal" Margin="120 30 0 0">
             <StackPanel  Name="SPPV1" Width="200"/>
             <StackPanel  Name="SPPV2" Width="200"/>
-            <StackPanel  Name="SPPV3" Width="200" Margin="20 0 0 0"/>
+            <StackPanel  Name="SPPV3" Width="250" Margin="20 0 0 0"/>
         </StackPanel>
     </Grid>
 </Window>
