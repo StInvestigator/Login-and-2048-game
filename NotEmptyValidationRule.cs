@@ -54,7 +54,7 @@ public class PasswordValidateRule : ValidationRule
             }
         }
         if (!ContBigLetter) { isValidationFalse = true; MainWindow.errors.Add("Need to contain a big letter"); }
-            if (!ContSmallLetter) { isValidationFalse = true; MainWindow.errors.Add("Need to contain a moll letter"); }
+            if (!ContSmallLetter) { isValidationFalse = true; MainWindow.errors.Add("Need to contain a smoll letter"); }
             if (!ContNumber) { isValidationFalse = true; MainWindow.errors.Add("Need to contain a number"); }
             if (ContSpace) { isValidationFalse = true; MainWindow.errors.Add("White spaces is not allower"); }
 
