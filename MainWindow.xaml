@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Login_and_2048_game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="35">
+        Title="MainWindow" Height="450" Width="800" FontSize="35" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="43*"/>
