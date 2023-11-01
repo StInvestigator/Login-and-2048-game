@@ -3,10 +3,76 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Login_and_2048_game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontSize="35">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="117*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="111*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="74*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Login:" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Right"/>
+        <Label Content="Password:" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Right" Margin="0,53,0,0" Grid.Row="1"/>
+        <TextBox
+ Grid.Column="1" Grid.Row="0" Margin="20,40,20,0" Name="TBLogin" TextChanged="PropertyChanged"
+  materialDesign:HintAssist.HelperText="Your login is OK">
+            <TextBox.Text>
+                <Binding
+      Path="Name"
+      UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <domain:NotEmptyValidationRule
+          ValidatesOnTargetUpdated="True" xmlns:domain="clr-namespace:MaterialDesignDemo.Domain" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <TextBox
+ Grid.Column="1" Grid.Row="1" Margin="20,50,20,0" Name="TBPassword" TextChanged="PropertyChanged2"
+  materialDesign:HintAssist.HelperText="Your password is OK">
+            <TextBox.Text>
+                <Binding
+      Path="Password"
+      UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <domain:PasswordValidateRule
+          ValidatesOnTargetUpdated="True" xmlns:domain="clr-namespace:MaterialDesignDemo.Domain" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        <CheckBox Grid.Row="3" HorizontalAlignment="Right" Margin="0 25 10 0" Width="18">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="2" ScaleY="2" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Label Grid.Row="3" Grid.Column="1" Content="Remember me" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" FontSize="25" Margin="0,20,0,0"/>
+        <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" Margin="0,3,0,0">
+            <Button
+  Width="200"
+  Content="Log In" Background="LightGreen" FontSize="20"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignPaperButton}"
+  ToolTip="Resource name: MaterialDesignPaperButton" Height="39" />
+            <Button
+  Width="200"
+  Content="Cancel" Background="PaleVioletRed" FontSize="20"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignPaperButton}"
+  ToolTip="Resource name: MaterialDesignPaperButton" Height="39" Margin="80 0 0 0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Name="SPPasswordValidate" Orientation="Horizontal" Margin="150 30 0 0">
+            <StackPanel  Name="SPPV1" Width="200"/>
+            <StackPanel  Name="SPPV2" Width="200"/>
+            <StackPanel  Name="SPPV3" Width="200"/>
+        </StackPanel>
     </Grid>
 </Window>
