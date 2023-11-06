@@ -6,8 +6,82 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Login_and_2048_game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="850" Width="600" Background="LightYellow">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250*"/>
+            <RowDefinition Height="600*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--Top grid-->
+        <materialDesign:Card Margin="5"
+            Height="150"
+  Background="RosyBrown"
+  Foreground="DarkRed"
+  UniformCornerRadius="45">
+            <TextBlock VerticalAlignment="Center" Margin="10 0 10 0"
+    Text="Total Score 0" TextAlignment="Center"
+                FontSize="50"
+    TextWrapping="Wrap" />
+        </materialDesign:Card>
+        <materialDesign:Card Margin="5" Grid.Column="1"
+            Height="150"
+  Background="RosyBrown"
+  Foreground="DarkRed"
+  UniformCornerRadius="45">
+            <TextBlock VerticalAlignment="Center" Margin="10 0 10 0"
+    Text="Best Score  0" TextAlignment="Center"
+                FontSize="50"
+    TextWrapping="Wrap" />
+        </materialDesign:Card>
+        <materialDesign:Card Grid.Row="1" Grid.ColumnSpan="2" Margin="5"
+  Background="Brown"
+  UniformCornerRadius="45">
+        </materialDesign:Card>
+        <materialDesign:Card Grid.Row="1" Grid.ColumnSpan="2" Margin="15"
+  Background="LightCoral"
+  UniformCornerRadius="45">
+        </materialDesign:Card>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="35">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--Bottom grid-->
 
+            <StackPanel Name="card11" Grid.Row="0" Grid.Column="0"/>
+            <materialDesign:Card Name="card12" Grid.Row="0" Grid.Column="1"/>
+            <materialDesign:Card Name="card13" Grid.Row="0" Grid.Column="2"/>
+            <materialDesign:Card Name="card14" Grid.Row="0" Grid.Column="3"/>
+
+            <materialDesign:Card Name="card21" Grid.Row="1" Grid.Column="0"/>
+            <materialDesign:Card Name="card22" Grid.Row="1" Grid.Column="1"/>
+            <materialDesign:Card Name="card23" Grid.Row="1" Grid.Column="2"/>
+            <materialDesign:Card Name="card24" Grid.Row="1" Grid.Column="3"/>
+
+            <materialDesign:Card Name="card31" Grid.Row="2" Grid.Column="0"/>
+            <materialDesign:Card Name="card32" Grid.Row="2" Grid.Column="1"/>
+            <materialDesign:Card Name="card33" Grid.Row="2" Grid.Column="2"/>
+            <materialDesign:Card Name="card34" Grid.Row="2" Grid.Column="3"/>
+
+            <materialDesign:Card Name="card41" Grid.Row="3" Grid.Column="0"/>
+            <materialDesign:Card Name="card42" Grid.Row="3" Grid.Column="1"/>
+            <materialDesign:Card Name="card43" Grid.Row="3" Grid.Column="2"/>
+            <Control Name="card44" Grid.Row="3" Grid.Column="3"/>
+
+            <!--Bottom grid-->
+        </Grid>
+        <!--Top grid-->
     </Grid>
 </Window>
