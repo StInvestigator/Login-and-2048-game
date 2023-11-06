@@ -34,6 +34,8 @@ namespace Login_and_2048_game.Core
                 kp.Value.Content = kp.Key;
                 kp.Value.VerticalAlignment = System.Windows.VerticalAlignment.Center;
                 kp.Value.FontSize = 25;
+                kp.Value.Width = 125;
+                kp.Value.Height = 125;
                 kp.Value.UniformCornerRadius = 30;
                 cardsList.Add(kp);
                 val *= 2;
@@ -55,6 +57,8 @@ namespace Login_and_2048_game.Core
             cardsList.ElementAt(10).Value.Foreground = new SolidColorBrush(Colors.White);
             cardsList.ElementAt(11).Value.Background = new SolidColorBrush(Colors.LightGoldenrodYellow);
             cardsList.ElementAt(11).Value.UniformCornerRadius = 30;
+            cardsList.ElementAt(11).Value.Width = 125;
+            cardsList.ElementAt(11).Value.Height = 125;
         }
     }
 }

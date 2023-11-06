@@ -1,4 +1,5 @@
 ﻿using Login_and_2048_game.Domain;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,26 +32,11 @@ namespace Login_and_2048_game
 
         void cardsToUI()
         {
-            card11.Children.Add(cards.elementAt(0).Value);
-            card12 = cards.elementAt(1).Value;
-            card13 = cards.elementAt(2).Value;
-            card14 = cards.elementAt(3).Value;
-
-            card21 = cards.elementAt(4).Value;
-            card22 = cards.elementAt(5).Value;
-            card23 = cards.elementAt(6).Value;
-            card24.Content = cards.elementAt(7).Value.Content;
-
-            card31 = cards.elementAt(8).Value;
-            card32 = cards.elementAt(9).Value;
-            card33 = cards.elementAt(10).Value;
-            card34 = cards.elementAt(11).Value;
-
-            card41 = cards.elementAt(12).Value;
-            card42 = cards.elementAt(13).Value;
-            card43 = cards.elementAt(14).Value;
-            card44 = cards.elementAt(15).Value;
-            
+            MainPanel.Children.Clear();
+            foreach (KeyValuePair<int,Card> item in cards)
+            {
+                MainPanel.Children.Add(item.Value);   
+            }
         }
     }
 }

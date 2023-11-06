@@ -44,8 +44,12 @@
         <materialDesign:Card Grid.Row="1" Grid.ColumnSpan="2" Margin="15"
   Background="LightCoral"
   UniformCornerRadius="45">
+            <StackPanel Margin="15" Name="MainPanel" Orientation="Horizontal">
+                
+            </StackPanel>
         </materialDesign:Card>
-        <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="35">
+        
+        <!--<Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="35">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -58,30 +62,30 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <!--Bottom grid-->
+            --><!--Bottom grid--><!--
 
             <StackPanel Name="card11" Grid.Row="0" Grid.Column="0"/>
-            <materialDesign:Card Name="card12" Grid.Row="0" Grid.Column="1"/>
-            <materialDesign:Card Name="card13" Grid.Row="0" Grid.Column="2"/>
-            <materialDesign:Card Name="card14" Grid.Row="0" Grid.Column="3"/>
+            <StackPanel Name="card12" Grid.Row="0" Grid.Column="1"/>
+            <StackPanel Name="card13" Grid.Row="0" Grid.Column="2"/>
+            <StackPanel Name="card14" Grid.Row="0" Grid.Column="3"/>
 
-            <materialDesign:Card Name="card21" Grid.Row="1" Grid.Column="0"/>
-            <materialDesign:Card Name="card22" Grid.Row="1" Grid.Column="1"/>
-            <materialDesign:Card Name="card23" Grid.Row="1" Grid.Column="2"/>
-            <materialDesign:Card Name="card24" Grid.Row="1" Grid.Column="3"/>
+            <StackPanel Name="card21" Grid.Row="1" Grid.Column="0"/>
+            <StackPanel Name="card22" Grid.Row="1" Grid.Column="1"/>
+            <StackPanel Name="card23" Grid.Row="1" Grid.Column="2"/>
+            <StackPanel Name="card24" Grid.Row="1" Grid.Column="3"/>
 
-            <materialDesign:Card Name="card31" Grid.Row="2" Grid.Column="0"/>
-            <materialDesign:Card Name="card32" Grid.Row="2" Grid.Column="1"/>
-            <materialDesign:Card Name="card33" Grid.Row="2" Grid.Column="2"/>
-            <materialDesign:Card Name="card34" Grid.Row="2" Grid.Column="3"/>
+            <StackPanel Name="card31" Grid.Row="2" Grid.Column="0"/>
+            <StackPanel Name="card32" Grid.Row="2" Grid.Column="1"/>
+            <StackPanel Name="card33" Grid.Row="2" Grid.Column="2"/>
+            <StackPanel Name="card34" Grid.Row="2" Grid.Column="3"/>
 
-            <materialDesign:Card Name="card41" Grid.Row="3" Grid.Column="0"/>
-            <materialDesign:Card Name="card42" Grid.Row="3" Grid.Column="1"/>
-            <materialDesign:Card Name="card43" Grid.Row="3" Grid.Column="2"/>
-            <Control Name="card44" Grid.Row="3" Grid.Column="3"/>
+            <StackPanel Name="card41" Grid.Row="3" Grid.Column="0"/>
+            <StackPanel Name="card42" Grid.Row="3" Grid.Column="1"/>
+            <StackPanel Name="card43" Grid.Row="3" Grid.Column="2"/>
+            <StackPanel Name="card44" Grid.Row="3" Grid.Column="3"/>
 
-            <!--Bottom grid-->
-        </Grid>
+            --><!--Bottom grid-->
+        <!--</Grid>-->
         <!--Top grid-->
     </Grid>
 </Window>

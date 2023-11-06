@@ -1,6 +1,7 @@
 ﻿using Login_and_2048_game.Core;
 using MaterialDesignThemes.Wpf;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Login_and_2048_game.Domain
 {
-    public class ActualCardsPlacement
+    public class ActualCardsPlacement : IEnumerable
     {
         List<KeyValuePair<int, Card>> list;
         GameValues values = new GameValues();
@@ -48,5 +49,7 @@ namespace Login_and_2048_game.Domain
         {
             return list.ElementAt(ind);
         }
+
+        public IEnumerator GetEnumerator() => list.GetEnumerator();
     }
 }
