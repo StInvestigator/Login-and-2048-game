@@ -68,21 +68,21 @@ namespace Login_and_2048_game
                 cards.MoveAllLeft();
             }
             UpdateTheScore();
-            cardsToUI();
             if (cards.Is2048)
             {
+                cardsToUI();
                 MessageBox.Show("You won!!!!! Congratulations!! (The game will restart when you click OK)", "The end", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 cards = new ActualCardsPlacement();
                 TBcurScore.Text = "0";
-                cardsToUI();
             }
             else if (!cards.GenerateStarter())
             {
+                cardsToUI();
                 MessageBox.Show("You lose. Try again","The end", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 cards = new ActualCardsPlacement();
                 TBcurScore.Text = "0";
-                cardsToUI();
             }
+            cardsToUI();
         }
 
         void UpdateTheScore()

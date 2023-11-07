@@ -52,7 +52,7 @@
   UniformCornerRadius="45">
         </materialDesign:Card>
         <materialDesign:Card Grid.Row="1" Grid.ColumnSpan="2" Margin="15"
-  Background="LightCoral"
+  Background="LightGray"
   UniformCornerRadius="45">
             <WrapPanel Margin="15" Name="MainPanel">
 

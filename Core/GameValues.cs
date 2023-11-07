@@ -27,7 +27,7 @@ namespace Login_and_2048_game.Core
 
         void cardsIntialization()
         {
-            cardsList.Add(new KeyValuePair<int, Brush>(0, new SolidColorBrush(Colors.LightCyan)));
+            cardsList.Add(new KeyValuePair<int, Brush>(0, new SolidColorBrush(Colors.Gray)));
             cardsList.Add(new KeyValuePair<int, Brush>(1, new SolidColorBrush(Colors.LightYellow)));
             cardsList.Add(new KeyValuePair<int, Brush>(2, new SolidColorBrush(Colors.Khaki)));
             cardsList.Add(new KeyValuePair<int, Brush>(3, new SolidColorBrush(Colors.DarkKhaki)));
